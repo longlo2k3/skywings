@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;   
+    font: inherit;
+    vertical-align: baseline;
+}
+
+@layer utilities {
+    .button-primary {
+        padding: 0.75rem 1.5rem;
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        white-space: nowrap;
+        border-radius: 5rem;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .button-primary:hover {
+      background-color: #2476da;
+    }
+    .p-text {
+        font-size: 1rem;
+        color: black;
+        line-height: 1.5rem;
+        cursor: pointer;
+    }
+    .p-text2 {
+      font-size: 1rem;
+      color: white;
+      line-height: 1.5rem;
+      cursor: pointer;
+  }
+    .p-text:hover {
+        color: #2476da;
+    }
+
+    .open {
+        opacity: 1;
+        animation: openAnimation 0.5s ease-in-out;
+    }
+    @keyframes openAnimation {
+      0% {
+          transform: translateY(-100%);
+          opacity: 0;
+      }
+      100% {
+         transform: translateY(0);
+          opacity: 1;
+      }
+  }
+    .close {
+        opacity: 0;
+        animation: closeAnimation 0.5s ease-in-out;
+    }
+    @keyframes closeAnimation {
+      from {
+          transform: translateY(0);
+          opacity: 1;
+      }
+      to {
+         transform: translateY(-100%);
+          opacity: 0;
+      }
+  }
+
+    
+  }
+
+  @layer components {
+    .section__container {
+        max-width: var(maxWidth);
+        margin: auto;
+        padding: 5rem 1rem;
+      }
+      
+      .section__header {
+        margin-bottom: 5px;
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--text-dark);
+        text-align: center;
+      }
+      
+      .section__description {
+        max-width: 600px;
+        margin-inline: auto;
+        color: var(--text-light);
+        text-align: center;
+      }
+    
+  }
