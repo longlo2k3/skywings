@@ -11,6 +11,7 @@ body {
     vertical-align: baseline;
 }
 
+
 @layer utilities {
     .button-primary {
         padding: 0.75rem 1.5rem;
@@ -68,10 +69,9 @@ body {
          transform: translateY(-100%);
           opacity: 0;
       }
-  }
 
-    
   }
+}
 
   @layer components {
     .section__container {
@@ -94,5 +94,9 @@ body {
         color: var(--text-light);
         text-align: center;
       }
-    
+
+      .container:hover .hoverup{
+        transform: translateY(0);
+        transition: transform 0.3s ease-in-out;
+      }
   }

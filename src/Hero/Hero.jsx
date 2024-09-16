@@ -14,7 +14,7 @@ const Hero = () => {
 
     return (
         <section style={backgroundImage} className="relative z-10 grid  grid-cols-1  md:grid-cols-2 m-[20px] rounded-3xl overflow-hidden">
-            <div className="flex flex-col justify-center md:items-start md:text-start text-center items-center p-[120px]  w-fit gap-2">
+            <div className="flex flex-col justify-center md:items-start md:text-start text-center items-center p-[120px]  gap-2">
                 <motion.p className="md:text-sm font-medium"
                     initial={{opacity:0, y: 100}}
                     whileInView={{opacity:1, y:0}}
