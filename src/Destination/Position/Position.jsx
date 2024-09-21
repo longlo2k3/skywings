@@ -4,8 +4,8 @@ import React from "react";
 
 const Position = (props)=>{
     return (
-        <div className="gap-1">
-            <img src={props.img} alt="destination" className="w-fit object-cover object-center rounded-3xl"/>
+        <div className="gap-1 p-2">
+            <img src={props.img} alt="destination" className="w-fit object-cover object-center rounded-3xl shadow-xl"/>
             <div className="flex flex-row justify-between ml-3 mt-3">
                 <div>
                     <h1 className="text-lg font-semibold">{props.destination}</h1>

@@ -7,7 +7,7 @@ import DesImg2 from '../assets/destination-2.jpg'
 import DesImg3 from '../assets/destination-3.jpg'
 const Destination = () =>{
     return(
-        <section className="flex flex-col justify-center items-center gap-4 md:mx-40 mx-4 my-20 min-w-fit overflow-hidden ">
+        <section className="flex flex-col justify-center items-center gap-4 lg:mx-40 mx-4 my-20 min-w-fit  ">
             <div className="flex flex-col ">
                 <div>
                     <h1 className="text-4xl font-bold leading-relaxed">Popolar Destination</h1>
