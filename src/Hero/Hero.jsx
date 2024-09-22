@@ -25,6 +25,7 @@ const Hero = () => {
                         stiffness: 120,
                         damping: 10
                     }} 
+                    viewport={{once:true}}
                 >ELEVATE YOUR TRAVEL JOURNEY</motion.p>
                 <motion.h1 className="lg:text-7xl font-semibold lg:max-w-[440px] text-3xl  leading-relaxed"
                     initial={{opacity:0, y: 100}}
@@ -36,10 +37,11 @@ const Hero = () => {
                         stiffness: 120,
                         damping: 10
                     }} 
+                    viewport={{once:true}}
                 >Experience The Magic Of Flight!</motion.h1>
                 <motion.div className="flex flex-row justify-start items-center mt-3 gap-2"
                     initial={{opacity:0, y: 100}}
-                    whileInView={{opacity:1, y:0}}
+                    animate={{opacity:1, y:0}}
                     transition={{ 
                         duration: 0.5, 
                         delay: 1.2,
@@ -64,6 +66,7 @@ const Hero = () => {
                     stiffness: 120,
                     damping: 10
                 }} 
+                viewport={{once:true}}
             >
                 <img src={ImageFly} alt="fly" className="md:absolute md:max-w-7xl md:top-10"  />
             </motion.div>

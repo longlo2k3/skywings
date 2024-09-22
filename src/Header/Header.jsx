@@ -37,6 +37,7 @@ const Header = () => {
                     stiffness: 120,
                     damping: 10
                 }} 
+                viewport={{once:true}}
             >
                 <p className='text-2xl font-bold md:text-black text-white'>Skywings</p>
                 <div className='md:text-[16px] md:font-semibold md:flex md:flex-row md:gap-[30px] hidden'>

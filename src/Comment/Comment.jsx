@@ -34,14 +34,35 @@ const Comment = () => {
   return (
     <section className="my-32 gap-4 lg:mx-40 mx-4 ">
       <div className="min-w-full flex flex-col justify-center items-center overflow-hidden">
-        <div className="text-center">
+        <motion.div className="text-center"
+          initial={{opacity:0}}
+          whileInView={{opacity:1}}
+          viewport={{once:true}}
+          transition={{
+              duration: 0.5,
+              delay:0.4,
+              type:"spring",
+              stiffness:120,
+              dumping:10
+          }}
+        >
           <h1  className="text-4xl font-semibold">Loved By Over Thousand Travelers</h1>
           <p className="text-gray-600"><span className="block">Discover the stories of wanderlust and cherished memories through </span><span>the eyes of our valued clients.</span></p>
-        </div>
+        </motion.div>
         <motion.div className="swiper flex flex-row justify-center translate-x-[203px] items-center gap-10 mt-14 "
            drag="x"
            dragConstraints={{left: -comments.length*203, right: comments.length*203}} // Điều chỉnh khoảng cuộn
            whileTap={{ cursor: "grabbing" }}
+           initial={{opacity:0,y:100}}
+           whileInView={{opacity:1,y:0}}
+           viewport={{once:true}}
+           transition={{
+              duration: 0.5,
+              delay:0.4,
+              type:"spring",
+              stiffness:120,
+              dumping:10
+          }}
         >
           {comments.map((value, index) => <CommentComponent key={index} {...value} />)}
 
